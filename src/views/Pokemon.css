@@ -1,0 +1,12 @@
+.imageContainer {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+.flechita {
+  cursor: pointer;
+}
