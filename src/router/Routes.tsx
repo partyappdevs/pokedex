@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Outlet,
   BrowserRouter,
   Routes as RouteList,
   Route,
@@ -9,7 +8,6 @@ import { AuthProvider } from "../context/loginContext";
 import Layout from "../views/Layout";
 import Login from "../views/Login";
 import Pokedex from "../views/Pokedex";
-import Pokemon from "../views/Pokemon";
 import Register from "../views/Register";
 import ProtectedRoute from "./ProtectedRoute";
 

@@ -1,11 +1,5 @@
 import { colors, Grid, Paper } from "@mui/material";
-import React, {
-  createRef,
-  RefObject,
-  useCallback,
-  useRef,
-  useState,
-} from "react";
+import React, { useCallback, useRef, useState } from "react";
 import { useEffect } from "react";
 import { getPokemons } from "../services/pokemons";
 import Pokemon from "./Pokemon";

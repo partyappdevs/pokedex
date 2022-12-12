@@ -1,10 +1,9 @@
 import { Button, Container, Grid, TextField, Typography } from "@mui/material";
-import React, { ChangeEvent, ChangeEventHandler, useState } from "react";
+import React, { ChangeEvent, useState } from "react";
 import { Link } from "react-router-dom";
 import RegisterModal from "../components/RegisterModal";
 import useDisclosure from "../hooks/useDisclosure";
 import auth from "../services/auth";
-import loginApi from "../services/loginApi";
 
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";

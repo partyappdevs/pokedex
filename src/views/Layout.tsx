@@ -1,12 +1,4 @@
-import {
-  AppBar,
-  Box,
-  Button,
-  Container,
-  Paper,
-  Toolbar,
-  Typography,
-} from "@mui/material";
+import { AppBar, Box, Button, Paper, Toolbar, Typography } from "@mui/material";
 import React from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import { useAuthDispatch, useAuthState } from "../context/loginContext";

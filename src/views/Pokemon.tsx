@@ -1,14 +1,6 @@
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardMedia,
-  Grid,
-  Typography,
-} from "@mui/material";
+import { Card, CardContent, CardMedia, Grid, Typography } from "@mui/material";
 import Box from "@mui/material/Box";
 import CircularProgress from "@mui/material/CircularProgress";
-import { type } from "os";
 import React, { useCallback, useEffect, useState } from "react";
 import useDisclosure from "../hooks/useDisclosure";
 import { colours, PokemonTypeName } from "../pokemonContants";
@@ -55,14 +47,8 @@ export default function Pokemon({ id }: IPokemonProps) {
     setTimeout(() => {
       handleClose();
     }, 200);
-  }, [id]);
-  const handleChangeImage = () => {
-    if (showedImage === pokemonData?.sprites.front_default) {
-      setShowedImage(pokemonData?.sprites.back_default || "");
-    } else {
-      setShowedImage(pokemonData?.sprites.front_default || "");
-    }
-  };
+  }, [handleClose, handleOpen, id]);
+
   useEffect(() => {
     handlePokemons();
   }, [handlePokemons]);
